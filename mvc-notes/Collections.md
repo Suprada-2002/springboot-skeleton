@@ -30,3 +30,16 @@
 ### Comparable vs Comparator
 
 ### How to synchronize and ArrayList
+
+### PriorityQueue vs TreeSet
+
+### Diamond Operator
+
+### TreeMap ?
+
+### Enum Map
+
+### CopyOnWriteOperator
+
+
+

@@ -18,8 +18,3 @@
 
 6. Difference between JDK, JRE and JVM
 
-- text
-- tetx
-- text
-- text
-- text
