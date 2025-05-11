@@ -12,4 +12,14 @@
 - used for better-performance of java app during run-time.
 
 4. Memeroy storage ?
-- 
+-
+
+5. classloader
+
+6. Difference between JDK, JRE and JVM
+
+- text
+- tetx
+- text
+- text
+- text
