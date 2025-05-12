@@ -27,3 +27,15 @@
 - return reference to the entity with given identifier.
 - likely return an instance or throw ```EntityNotFoundException``` on first access.
 3. flush(): flushes all pending changes to database.
+
+
+## POJO
+- Plain Old Java Object
+- class with no business logic & provide object representation without any behavior.
+- such object are light to transport from one layer-layer/process-process
+- any object can be POJO
+  
+### POJO vs Model
+- model mirrors a database table.
+- POJO denotes any ordinary object, not bound by any special restriction and not requiring any class path.
+- model is a POJO class but a POJO not necessary be used as a model.
