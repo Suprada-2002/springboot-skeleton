@@ -12,3 +12,7 @@
 
 ### Controller
 - processese user request and passes them to view to render.
+
+## JpaRespository
+- contains the full API for ```CrudRepository``` & ```PagingAndSortingRepository```.
+- contains API for basic CRUD operations and also API for pagination & sorting.
