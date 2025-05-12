@@ -16,3 +16,14 @@
 ## JpaRespository
 - contains the full API for ```CrudRepository``` & ```PagingAndSortingRepository```.
 - contains API for basic CRUD operations and also API for pagination & sorting.
+
+
+### Important methods
+1. saveAll() : save all entities
+- returned Iterable same size as passed argument Iterable
+- returns the saved entities but never null.
+- throws ```IllegalArgumentException``` in case given entities/one of entities is null.
+2. getById()
+- return reference to the entity with given identifier.
+- likely return an instance or throw ```EntityNotFoundException``` on first access.
+3. flush(): flushes all pending changes to database.
