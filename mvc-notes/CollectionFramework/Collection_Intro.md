@@ -69,3 +69,9 @@ e. Sorted Map Interface
 - Collection is a base interface for List, Set, Queue, whereas Collections is a Utility class/support tool which contains variety of useful methods that work with Collection.
 - contains predefined static methods that can be used while working with Collection.
 - ex: sort(), reverse(), shuffle(), disjoint(), binarySearch()
+
+## Generics
+- Main objective: provide type safety.
+- Group of element is said to be type safe if they are bound to have Single type of data member like Array.
+- To solve problem related to type-casting in collection.
+- To enable developer to write less redundant code.
