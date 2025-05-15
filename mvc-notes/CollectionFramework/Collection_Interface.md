@@ -27,3 +27,10 @@ ArrayList a = new ArrayList(Collection c);
 ```
 ArrayList<String> a = new ArrayList<String>();
 ```
+
+### Serializable & Cloneable Interface
+- use collection to hold & transfer a group of objects from one location to other.
+- To send object across a network, it is mandatory that the object should be serializable i.e. Object should implement ```serializable interface```.
+- That's why every collection class/interface by default implements/extends serializable.
+- Ever Collection class implements ```Cloneable interface``` by which we can reduce duplicates or duplicate objects, so that we can operate on those objects & later compare them with the original ones if necessary.
+- Also objects can recovered id something goes wrong.
