@@ -65,3 +65,31 @@ LinkedList ll = new LinkedList(Collection c); : creates equivalent linked list f
 |----|----|
 |Bad for insert/delete in middle|best choice|
 |best for retriving(Indexed-array)|not best because to find  positon of ele, traverse the whole list|
+
+## Vector
+- resizable/growable array.
+- underlying DS: array.
+- Heterogenous object allowed
+- Implements Cloneable, Serializable and random access interface.
+- size(): current number of elements it is holding.
+- capacity(): total elements it can hold.
+> All methods are synchronized i.e. Only one thread can access a method at a time. so Vector are **thread safe**.
+
+> Performance: time threads are required to wait to operate on its methods.
+
+- New Size: ```Current size*2```.
+- Capacity can be defined:
+```
+Vector v = new Vector(60);
+
+Vector v = new Vector(capacity, incrementalCapacity);
+Vector v = new Vector(100, 5); //increment by 5 not double the size
+Vector v = new Vector(Collection c); //get equivalent vector for c
+```
+
+|ArrayList|Vector|
+|----|---|
+|Methods Not Synchronized| Methods are Synchronized |
+|Not Thread Safe|Thread Safe|
+|Performance is high|Low performance|
+|Not legacy class, came in v 1.2|Legacy class v 1|
