@@ -118,3 +118,17 @@ r[0] = new Thread();
 print(r[0]);  // thread object
 print(r[1]); //null
 ```
+
+### Assigning Array Object to Array references
+- parent type can hold child type classes references
+```
+String[] str = new String[5];
+Object[] obj = str;
+```
+- Below will give error because there is no relation between the classes.
+- short element can be promoted to int.
+- short array object type cannot be promoted to int object type.
+```
+short[] sh = new short[];  // [S
+int[] arr = sh;   // [I
+```
