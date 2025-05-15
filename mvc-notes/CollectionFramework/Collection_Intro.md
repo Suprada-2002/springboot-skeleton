@@ -44,3 +44,23 @@ d. HashTable class
 - extends an Abstract class: Dictionary
 e. Sorted Map Interface
 - child Interface: Navigable Map -> TreeMap class
+
+## Methods
+- No direct implementation/no concrete class that provide implementation of Collection Framework.
+- Methods present can be used in any type classes because they are present in Collection Interface.
+1. boolean add(Object o)
+- adds object to the invoking collection.
+- ex: In case of Set, if object is already there, it will return false as duplicate is not allowed.
+2. boolean addAll(Collection c)
+- adds collection to the invoking collection.
+- adding one list to another.
+3. boolean remove(Object o)
+4. boolean removeAll(Collection c)
+5. boolean retainAll(Collection c)
+- remove all elements from invoking element except element present in Collection c.
+6. boolean contains(Object o)
+- return true if object is present in invoking collection.
+7. Iterator iterator()
+- provides cursor to get objects of collection one by one.
+8. Object[] toArray()
+- converts invoking Collection to Array.
