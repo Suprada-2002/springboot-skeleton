@@ -64,3 +64,8 @@ e. Sorted Map Interface
 - provides cursor to get objects of collection one by one.
 8. Object[] toArray()
 - converts invoking Collection to Array.
+
+> Collection vs Collections
+- Collection is a base interface for List, Set, Queue, whereas Collections is a Utility class/support tool which contains variety of useful methods that work with Collection.
+- contains predefined static methods that can be used while working with Collection.
+- ex: sort(), reverse(), shuffle(), disjoint(), binarySearch()
