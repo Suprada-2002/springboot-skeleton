@@ -107,3 +107,59 @@ Stack s = new Stack();
 3. peek()
 4. boolean isEmpty()
 5. index search(Object)
+
+## Cursors
+- An indicator used to show the current position for respective object or element.
+- 4 types
+### 1. Enumeration
+- used to get objects one by one from legacy collection object.
+- Unidirectional
+```
+Vector v = new Vector();
+
+Enumeration e = v.elements();
+
+while(e.hasMoreElements()){
+	Integer ele = (Integer)e.nextElement();
+	print(ele); 
+}
+```
+### 2. Iterator 
+- any collection
+- Unidirectional
+```
+ArrayList<Integer> ar = new ArrayList<Ineteger>();
+
+Iterator it = ar.iterator();
+
+while(it.hasNext())
+{
+  Integer i = (Integer)it.next();
+  if(i % 3==0) print(i);
+  else it.remove();
+}
+```
+### 3. ListIterator 
+- used for only list object
+- Sub interface of Iterator Interface
+- Bidirectional
+```
+ArrayList<String> ar = new ArrayList<String>();
+
+ListIterator li = ar.listIterator();  // convert ar to equivalent ListIterator
+
+while(li.hasNext())
+{
+  String st = (String)li.next();
+}
+```
+### 4. Spliterator 
+
+|Properties|Enumeration|Iterator|ListItertor|
+|--|--|--|--|
+|Used for|Legacy classes object|for any collection object|for list class object|
+|legacy|yes|no|no|
+|direction flow|forward|forward|forward+backward|
+|access we can get|only read|read & remove|read,remove,replace,add|
+object creation|by using elements() of vector class|by using iterator() of Collection(Interface)| by using ListIterator() of List(Interface)|
+|methods| hasMoreElements(), nextElement()| hasNext(),next(),remove()| hasNext(), next(), nextIndex(), previous(). add(Obj), set(obj), hasPrevious(), remove()|
