@@ -34,3 +34,15 @@ ArrayList<String> a = new ArrayList<String>();
 - That's why every collection class/interface by default implements/extends serializable.
 - Ever Collection class implements ```Cloneable interface``` by which we can reduce duplicates or duplicate objects, so that we can operate on those objects & later compare them with the original ones if necessary.
 - Also objects can recovered id something goes wrong.
+
+
+### Random Access Interface
+- ArrayList implements ```random access interface```.
+- present in java.util package & does not contain any methods.
+- It is just a marker interface which is generally used ArrayList/vector class to indicate that it support fast random access.
+```
+Random Access Interface
+	|-- Marker Interface
+```
+- Hence **suitable to perform retrieval** operation frequently.
+- **Not recommended for insertion/deletion in middle**, because for single addition/deletion many sifts of elements is required.
