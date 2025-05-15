@@ -46,3 +46,22 @@ Random Access Interface
 ```
 - Hence **suitable to perform retrieval** operation frequently.
 - **Not recommended for insertion/deletion in middle**, because for single addition/deletion many sifts of elements is required.
+
+## LinkedList
+- Every element is a separate object with data & address part.
+- heterogenous
+- null insertion is possible
+```
+Non-parameterized constructor
+LinkedList ll = new LinkedList();
+
+Parametrized constructor
+LinkedList ll = new LinkedList(Collection c); : creates equivalent linked list for c.
+```
+
+> ArrayList vs LinkedList
+
+| ArrayList | LinkedList |
+|----|----|
+|Bad for insert/delete in middle|best choice|
+|best for retriving(Indexed-array)|not best because to find  positon of ele, traverse the whole list|
