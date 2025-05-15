@@ -76,4 +76,42 @@ print(arr[0][0]); //0
           System.out.println(i);
         }
       }
+
+for(int i=arr.length;i++){
+  for(int j=0;j<arr[i].length;j++){
+     print(arr[i][j]);
+   }
+}
+```
+## Type of Array based in elements it holds/Array Element Assignments
+1. Primitive 
+- Boolean, byte, char, short, int, float
+```
+int[] arr = new int[2];
+arr[0]='a'; //97
+float[] = new float[2];
+```
+2. Objects
+- can include any child class of Object.
+```
+Object[] obj = new Object[5];
+obj[0] = new Object();
+obj[1] = new String();
+```
+3. Abstract class type Array
+- object cannot be created for Abstract class.
+- cannot hold the declare type itself(Number object).
+- can hold child or sub-class object.
+- 6 child: byte,short,int,long,float,double.
+```
+Number[] num = new Number[3];
+num[0] = new Integer(1);
+num[1] = new Byte("2");
+```
+4.Interface type Array
+- object cannot be created.
+- store class that implement this interface.
+```
+Runnable[] r = new Runnable[5];
+r[0] = new Thread();
 ```
