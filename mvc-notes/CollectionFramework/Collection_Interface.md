@@ -93,3 +93,17 @@ Vector v = new Vector(Collection c); //get equivalent vector for c
 |Not Thread Safe|Thread Safe|
 |Performance is high|Low performance|
 |Not legacy class, came in v 1.2|Legacy class v 1|
+
+## Stack
+- Underlying DS: stack
+- LIFO
+```
+Only one Constructor:
+Stack s = new Stack();
+```
+- Methods:
+1. push()
+2. pop()
+3. peek()
+4. boolean isEmpty()
+5. index search(Object)
