@@ -132,3 +132,19 @@ Object[] obj = str;
 short[] sh = new short[];  // [S
 int[] arr = sh;   // [I
 ```
+
+## Anonymous Arrays
+- Array without a name.
+- purpose is to create and use them instantly, so they are usually passed as an argument.
+- cannot provide a size.
+```
+sum(new int[] {1,2,3});
+
+private static int sum(int[] su){
+  int total = 0;
+  for(int i:su){
+	total+=i;
+   }
+  return total; 
+}
+```
