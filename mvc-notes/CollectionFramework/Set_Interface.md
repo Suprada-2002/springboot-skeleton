@@ -26,3 +26,15 @@ HashSet hs = new HashSet(Collection c); // equivalent HashSet of c.
 ### HashTable
 - For every passed objects,it generates a hash code.
 - For index it performs mod operation of generated hash code with table size.
+
+### LinkedHashSet
+- Child class of HashSet.
+- Underlying DS: combination of LinedList and Has Table.
+- Insertion Order is Preserved.
+- introduced in v 1.4.
+- Initial Capacity: 16.
+```
+LinkedHashSet hs = new LinkedHashSet();
+LinkedHashSet hs = new LinkedHashSet(capacity);
+LinkedHashSet hs = new LinkedHashSet(capacity, loadFactor);  // 20, 1.00f
+```
