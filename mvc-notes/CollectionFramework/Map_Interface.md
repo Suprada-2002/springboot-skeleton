@@ -20,3 +20,7 @@ equals()
 1. Always return an integer.
 2. 2 equal objects will have same number.
 - After that modulo of hash code to the size of the table to get the index and stored in hash table.
+> Collisons
+- When same hash code is generated for 2 different objects, it is called ```collision```.
+- One of way to deal with collision is to put the objects that collide in a linked list.
+- in that case hash table will be an array of list.
