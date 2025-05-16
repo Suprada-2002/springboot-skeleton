@@ -38,3 +38,20 @@ LinkedHashSet hs = new LinkedHashSet();
 LinkedHashSet hs = new LinkedHashSet(capacity);
 LinkedHashSet hs = new LinkedHashSet(capacity, loadFactor);  // 20, 1.00f
 ```
+
+## SortedSet Interface
+- Introduced in v 1.2.
+- Insertion Order not preserved.
+- Duplicates not allowded.
+- Homogenous Elements allowded.
+- Insertion is done according to some sorting order.
+```
+SortedSet ss = new TreeSet();
+```
+- 7 Methods in Sorted Set Interface:
+1. Object first() : first element of treeset/sortedset.
+2. Object last() : last element
+3. SortedSet headSet(Object o) : all values coming before o.
+4. SortedSet tailSet(Object o) : all values coming after o,including o.
+5. SortedSet subSet(Object a, Object b) : all values between a & b, inlcuding a.
+6. Comparator comparator() : order of sorted set. Natural sorting null is null.
