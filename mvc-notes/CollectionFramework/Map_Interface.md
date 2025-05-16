@@ -13,3 +13,10 @@
 hashCode() 
 equals() 
 ```
+
+### hashCode() function
+- generates a unique code for object like a hash function.
+- ***@ Objects can have same hash code***
+1. Always return an integer.
+2. 2 equal objects will have same number.
+- After that modulo of hash code to the size of the table to get the index and stored in hash table.
