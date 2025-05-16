@@ -71,3 +71,32 @@ NavigableSet<> ns = new TreeSet();
 5. ns.pollFirst() : retrieve & remove the first least element or return null if no such element.
 6. ns.pollLast() :  retrieve & remove the first highest element or return null if no such element.
 7. desecdingSet() : return set in descending order.
+
+### TreeSet Class
+- Implementing Class for SortedSet & NavigableSet Interface.
+- Homogenous Elements so that elements are comparable, otherwise classCast exception at runtime.
+- Null value only when tree set is empty (Only Once) else null-pointer exception.
+- Implementation is based on a balanced tree, where duplicates are not allowded & Order is not preserved.
+- Insertion is done according to some sorting order.
+```
+          root
+          / \
+  ele<less  ele>root
+ ```
+- Constructors:
+```
+TreeSet ts = new TreeSet();  // default sorting order
+TreeSet ts = new TreeSet(Comparator obj);  // custom sorting order
+TreeSet ts = new TreeSet(SortedSet s); 
+TreeSet ts = new TreeSet(Collection c);
+```
+- *better to go with generic syntax* to keep elements homogenous.
+- **Implements Comparable Interface**.
+```
+public class Employee implements Comparable {
+    //code
+    public int compareTO(Object o){}
+}
+
+TreeSet<Employee> ts = new TreeSet<Employee>();
+```
