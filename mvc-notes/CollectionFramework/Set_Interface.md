@@ -100,3 +100,55 @@ public class Employee implements Comparable {
 
 TreeSet<Employee> ts = new TreeSet<Employee>();
 ```
+
+## Comparable Interface
+- present in java.land package
+- Contains only one method: ``` public int compareTo(Object obj)```.
+- Meant for Default Natural sorting order.
+- by default JVM uses it.
+```
+compareTo() return an integer value
++1: right
+-1: left
+0: equal
+```
+
+## Comparator Interface
+- Present in java.util package.
+- used for Customized sorting order or Insert in Desending Order.
+- Contains 2 methods:
+```
+public int compare (Object obj1, Object obj2);
+public boolean equals (Object obj);
+```
+> Compare()
+
+- Implementation is must in order to define customized sorting order.
+
+> equals()
+
+- Implementation is not required.
+- As Object is super/parent class for every java class & this equals method is already present in that.
+```
+Example: for descending order:
+public class MySorting implement Comparator{
+
+  @Override
+  public int compare(Object o1, Object o2){
+    Integer d1 = (Inetegr)o1;
+    Integer d2 = (Inetegr)o2;
+    if(d1<d2) return +1;
+    elseif(d1>d2) return -1;
+    else 0;
+  }
+}
+
+public class MyClass{
+  public static void main(String[] args){
+    TreeSet st = new TreeSet(new MySorting());
+    st.add();
+
+    print(st);
+  }
+}
+```
