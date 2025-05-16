@@ -7,6 +7,8 @@
 
 ## Hashing
 - Hash Function is a function in which when we supply an object,it generates address of that object.
+- Applide to keys of HashMap.
+- convert large strings to small string that represent the same things.
 - Object class has 2 functions:
 - Both mehtods need to be overriden.
 ```
@@ -24,3 +26,12 @@ equals()
 - When same hash code is generated for 2 different objects, it is called ```collision```.
 - One of way to deal with collision is to put the objects that collide in a linked list.
 - in that case hash table will be an array of list.
+
+## HashMap Class
+- Underlying DS: hash table.
+- Insertion Order not preserved.
+- No duplicate keys.
+- Key can be null only once. Values can be null more than once.
+- Key & value both can be heterogenous.
+-   Implements Serializable, Cloneable interface. Extends an abstract class ```Abstract Map```.
+- **Best choice for search operations**, because it uses hashing to store data.
