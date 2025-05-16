@@ -55,3 +55,19 @@ SortedSet ss = new TreeSet();
 4. SortedSet tailSet(Object o) : all values coming after o,including o.
 5. SortedSet subSet(Object a, Object b) : all values between a & b, inlcuding a.
 6. Comparator comparator() : order of sorted set. Natural sorting null is null.
+
+### NavigableSet Interface
+- child interface of Sorted Set.
+- Contains methods related to Navigation functionality.
+- used to report the closest matches for a given search target/element.
+```
+NavigableSet<> ns = new TreeSet();
+```
+- Methods of naviagbleSet Interface:
+1. ns.floor(Objec c) : Greatest element that is less than or equal to c, null is no such element.
+2. ns.lower(Object c) : Greatest element that is less than c, null is no such element.
+3. ns.celling(Object c) : Least element that is greater than or equal to c, null is no such element.
+4. ns.higher(Object c) : Least element that is greater than c, null if no such element.
+5. ns.pollFirst() : retrieve & remove the first least element or return null if no such element.
+6. ns.pollLast() :  retrieve & remove the first highest element or return null if no such element.
+7. desecdingSet() : return set in descending order.
