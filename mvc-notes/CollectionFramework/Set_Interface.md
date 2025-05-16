@@ -22,3 +22,7 @@ HashSet hs = new HashSet(Collection c); // equivalent HashSet of c.
 > Load factor: represents at what level the hash map capacity should be changed.
 
 > Default load factor: 0.75 or 75%. Hence after 75%is filled, it doubles the size.
+
+### HashTable
+- For every passed objects,it generates a hash code.
+- For index it performs mod operation of generated hash code with table size.
