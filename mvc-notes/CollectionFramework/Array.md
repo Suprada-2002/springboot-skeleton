@@ -1,8 +1,8 @@
 # Array
-- Homogenous collection of element.
+- Homogeneous collection of elements.
 - Indexed.
-- part of Java language and not Collection Fraemwork.
-- Table for every array type.
+- part of Java language and not Collection Framework.
+- There is a class for every array type.
 
 ```
 System.out.println(arr.getClass().getName());
@@ -49,7 +49,7 @@ int[] arr = new int[3]
 print(arr);
 ```
 - arr is a reference variable that points to array
-- toString() method is called and print the following:
+- toString() method is called and prints the following:
 ```
 [I@33909752
 name of class @ hashcode in hexadecimal
@@ -83,9 +83,9 @@ for(int i=arr.length;i++){
    }
 }
 ```
-## Type of Array based in elements it holds/Array Element Assignments
+## Type of Array based on elements it holds/Array Element Assignments
 1. Primitive
-- can hold any primitive type that can be declared to declare type.
+- can hold any primitive type that can be promoted to declare-type.
 - Boolean, byte, char, short, int, float
 ```
 int[] arr = new int[2];
@@ -93,7 +93,7 @@ arr[0]='a'; //97
 float[] = new float[2];
 ```
 2. Objects
-- Pure object can hold either the declare type or child class type/sub type.
+- Pure object can hold either the declare type or child class type/sub-type.
 ```
 Object[] obj = new Object[5];
 obj[0] = new Object();
@@ -103,15 +103,15 @@ obj[1] = new String();
 - object cannot be created for Abstract class.
 - cannot hold the declare type itself(Number object).
 - can only hold child or sub-class object.
-- 6 child: byte,short,int,long,float,double.
+- 6 child: byte, short, int, long, float, double.
 ```
 Number[] num = new Number[3];
 num[0] = new Integer(1);
 num[1] = new Byte("2");
 ```
-4.Interface type Array
+4. Interface type Array
 - object cannot be created.
-- hold object of class that implement this interface.
+- hold object of class that implements this interface.
 ```
 Runnable[] r = new Runnable[5];
 r[0] = new Thread();
@@ -120,14 +120,14 @@ print(r[1]); //null
 ```
 
 ### Assigning Array Object to Array references
-- parent type can hold child type classes references
+- Parent type can hold child type class references
 ```
 String[] str = new String[5];
 Object[] obj = str;
 ```
 - Below will give error because there is no relation between the classes.
-- short element can be promoted to int.
-- short array object type cannot be promoted to int object type.
+- Short element can be promoted to int.
+- Short array object type cannot be promoted to int object type.
 ```
 short[] sh = new short[];  // [S
 int[] arr = sh;   // [I
