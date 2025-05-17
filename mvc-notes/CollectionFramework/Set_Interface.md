@@ -1,18 +1,18 @@
 # Set Interface
 - No Duplicates.
 - Insertion Order is not preserved.
-- Accept heterogenous objects.
+- Accept heterogeneous objects.
 - No indexing
 
 ## HashSet
 - Unserlying DS: Hash Table.
 - can add null value.
 - Implements Serializable and Cloenable Interface.
-- suitable if **seraching is the frequent** operation, becuase elements are inserted in form of has code,so searching becomes very easy.
+- suitable if **seraching is the frequent** operation, because elements are inserted in form of has code,so searching becomes very easy.
 - Hashing is the fastest ever algorithm for search.
 - Initial capacity: **16.**
 - New size : current **size * 2**.
-- 4 constrcuctors:
+- 4 constructors:
 ```
 HashSet hs = new HashSet();
 HashSet hs = new HashSet(capacity); 
@@ -21,10 +21,10 @@ HashSet hs = new HashSet(Collection c); // equivalent HashSet of c.
 ```
 > Load factor: represents at what level the hash map capacity should be changed.
 
-> Default load factor: 0.75 or 75%. Hence after 75%is filled, it doubles the size.
+> Default load factor: 0.75 or 75%. Hence after 75% is filled, it doubles the size.
 
 ### HashTable
-- For every passed objects,it generates a hash code.
+- For every passed objects, it generates a hash code.
 - For index it performs mod operation of generated hash code with table size.
 
 ### LinkedHashSet
@@ -42,8 +42,8 @@ LinkedHashSet hs = new LinkedHashSet(capacity, loadFactor);  // 20, 1.00f
 ## SortedSet Interface
 - Introduced in v 1.2.
 - Insertion Order not preserved.
-- Duplicates not allowded.
-- Homogenous Elements allowded.
+- Duplicates not allowed.
+- Homogeneous Elements allowed.
 - Insertion is done according to some sorting order.
 ```
 SortedSet ss = new TreeSet();
@@ -52,18 +52,18 @@ SortedSet ss = new TreeSet();
 1. Object first() : first element of treeset/sortedset.
 2. Object last() : last element
 3. SortedSet headSet(Object o) : all values coming before o.
-4. SortedSet tailSet(Object o) : all values coming after o,including o.
+4. SortedSet tailSet(Object o) : all values coming after o, including o.
 5. SortedSet subSet(Object a, Object b) : all values between a & b, inlcuding a.
 6. Comparator comparator() : order of sorted set. Natural sorting null is null.
 
 ### NavigableSet Interface
 - child interface of Sorted Set.
 - Contains methods related to Navigation functionality.
-- used to report the closest matches for a given search target/element.
+- Used to report the closest matches for a given search target/element.
 ```
 NavigableSet<> ns = new TreeSet();
 ```
-- Methods of naviagbleSet Interface:
+- Methods of navigableSet Interface:
 1. ns.floor(Objec c) : Greatest element that is less than or equal to c, null is no such element.
 2. ns.lower(Object c) : Greatest element that is less than c, null is no such element.
 3. ns.celling(Object c) : Least element that is greater than or equal to c, null is no such element.
@@ -75,8 +75,8 @@ NavigableSet<> ns = new TreeSet();
 ### TreeSet Class
 - Implementing Class for SortedSet & NavigableSet Interface.
 - Homogenous Elements so that elements are comparable, otherwise classCast exception at runtime.
-- Null value only when tree set is empty (Only Once) else null-pointer exception.
-- Implementation is based on a balanced tree, where duplicates are not allowded & Order is not preserved.
+- Null value only when treeSet is empty (Only Once), else null-pointer exception.
+- Implementation is based on a balanced tree, where duplicates are not allowed & Order is not preserved.
 - Insertion is done according to some sorting order.
 ```
           root
@@ -102,7 +102,7 @@ TreeSet<Employee> ts = new TreeSet<Employee>();
 ```
 
 ## Comparable Interface
-- present in java.land package
+- present in ```java.lang package```.
 - Contains only one method: ``` public int compareTo(Object obj)```.
 - Meant for Default Natural sorting order.
 - by default JVM uses it.
@@ -114,8 +114,8 @@ compareTo() return an integer value
 ```
 
 ## Comparator Interface
-- Present in java.util package.
-- used for Customized sorting order or Insert in Desending Order.
+- Present in ```java.util package```.
+- used for customized sorting order or Insert in Descending Order.
 - Contains 2 methods:
 ```
 public int compare (Object obj1, Object obj2);
