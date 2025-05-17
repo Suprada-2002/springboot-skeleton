@@ -12,17 +12,17 @@
 
 
 ## LinkedList Class
-- 1.5 v
-- Queue has a child interface called dequeue & Linkedlist directly implements that interface.
+- Introduced in java v 1.5.
+- Queue has a child interface called dequeue & LinkedList directly implements that interface.
 - 
 
 ## PriorityQueue Class
--  represent group of objects that are about to be processed according to some priority.
+- Represent group of objects that are about to be processed according to some priority.
 - No duplicates
 - Insertion order is not preserved.
-- if Default Natural sorting order is used, heterogenous element is not alloweded.
-- null insertion not allowded.
-- Defualt size: 11.
+- If the Default Natural sorting order is used, heterogeneous element is not allowed.
+- Null insertion not allowed.
+- Default size: 11.
 ```
 PriorityQueue pq = new PriorityQueue();
 PriorityQueue pq = new PriorityQueue(capacity);
