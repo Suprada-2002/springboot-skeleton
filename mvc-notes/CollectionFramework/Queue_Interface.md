@@ -1,6 +1,6 @@
 # Queue Interface
 - introduced in java v 1.5.
-- represent group of objects that are about to be processed.
+- represents group of objects that are about to be processed.
 - FIFO, and both ends are open : with one for insertion and other for deletion.
 - methods:
 1. boolean add(): add element at tail
