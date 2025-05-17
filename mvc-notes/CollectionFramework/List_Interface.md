@@ -1,7 +1,7 @@
 # List Interface
 - Ordered : Insertion order is preserved.
 - Duplicate allowed.
-- positional Access to elements 
+- Positional access to elements 
 - Object of List is not allowed, but instance can be created using its implementing classes.
 ```
 List a = new ArrayList();
@@ -13,7 +13,7 @@ List d = new Stack();
 ## ArrayList
 - Resizable array.
 - underlying DS: Array.
-- accepts heterogenous objects.
+- accepts heterogeneous objects.
 - New size: ```(x * 3/2) + 1```, where x = Initial array size.
 - Original array is copied to New one & discarded.
 ```
@@ -31,14 +31,14 @@ ArrayList<String> a = new ArrayList<String>();
 ### Serializable & Cloneable Interface
 - use collection to hold & transfer a group of objects from one location to other.
 - To send object across a network, it is mandatory that the object should be serializable i.e. Object should implement ```serializable interface```.
-- That's why every collection class/interface by default implements/extends serializable.
+- That's why every collection class/interface by default implements/extends Serializable.
 - Ever Collection class implements ```Cloneable interface``` by which we can reduce duplicates or duplicate objects, so that we can operate on those objects & later compare them with the original ones if necessary.
-- Also objects can recovered id something goes wrong.
+- Also objects can recovered if something goes wrong.
 
 
 ### Random Access Interface
 - ArrayList implements ```random access interface```.
-- present in java.util package & does not contain any methods.
+- present in ```java.util package``` & does not contain any methods.
 - It is just a marker interface which is generally used ArrayList/vector class to indicate that it support fast random access.
 ```
 Random Access Interface
@@ -50,13 +50,13 @@ Random Access Interface
 ## LinkedList
 - Every element is a separate object with data & address part.
 - heterogenous
-- null insertion is possible
+- Null insertion is possible
 ```
 Non-parameterized constructor
 LinkedList ll = new LinkedList();
 
 Parametrized constructor
-LinkedList ll = new LinkedList(Collection c); : creates equivalent linked list for c.
+LinkedList ll = new LinkedList(Collection c); // creates equivalent linked list for c.
 ```
 
 > ArrayList vs LinkedList
@@ -64,16 +64,16 @@ LinkedList ll = new LinkedList(Collection c); : creates equivalent linked list f
 | ArrayList | LinkedList |
 |----|----|
 |Bad for insert/delete in middle|best choice|
-|best for retriving(Indexed-array)|not best because to find  positon of ele, traverse the whole list|
+|best for retrieving (Indexed-array)|not best because to find  position of ele, traverse the whole list|
 
 ## Vector
 - resizable/growable array.
 - underlying DS: array.
-- Heterogenous object allowed
-- Implements Cloneable, Serializable and random access interface.
+- Heterogeneous object allowed
+- Implements Cloneable, Serializable & random access interface.
 - size(): current number of elements it is holding.
 - capacity(): total elements it can hold.
-> All methods are synchronized i.e. Only one thread can access a method at a time. so Vector are **thread safe**.
+> All methods are synchronized i.e. only one thread can access a method at a time. so Vector are **thread safe**.
 
 > Performance: time threads are required to wait to operate on its methods.
 
